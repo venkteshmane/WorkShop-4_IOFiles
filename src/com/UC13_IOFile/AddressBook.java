@@ -16,7 +16,7 @@ public class AddressBook {
 	        buffer.append(dataString);
 	    });
 	    try {
-	        Files.write(Paths.get("C:\\Users\\user\\Desktop\\WorkShop4\\WorkShop-4.txt"), buffer.toString().getBytes());
+	        Files.write(Paths.get("C:\\Users\\user\\Desktop\\WorkShop4\\src\\com\\UC13_IOFile\\WorkShop-4.txt"), buffer.toString().getBytes());
 
 	    } catch (IOException x) {
 
@@ -24,7 +24,7 @@ public class AddressBook {
 	}
 	    public void readData(String readAddressBookName) {
 	        try {
-	            Files.lines(new File("C:\\Users\\user\\Desktop\\WorkShop4\\WorkShop-4.txt").toPath()).map(line -> line.trim()).forEach(line -> System.out.println(line));
+	            Files.lines(new File("C:\\Users\\user\\Desktop\\WorkShop4\\src\\com\\UC13_IOFile\\WorkShop-4.txt").toPath()).map(line -> line.trim()).forEach(line -> System.out.println(line));
 
 	        } catch (IOException x) {
 
